@@ -1,4 +1,4 @@
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # From the project root
@@ -12,11 +12,11 @@ npm run dev:problem5
 - **API**: http://localhost:3000/api/books
 - **Documentation**: http://localhost:3000/api-docs
 
-## 📋 Overview
+## Overview
 
 In this problem solving, I'm using the book as the resource that this backend application will be handle
 
-## 🏗️ Architecture
+## Architecture
 
 ### Technologies Used
 - **Express.js** - Web framework
@@ -50,7 +50,7 @@ src/problem5/
 └── index.ts              # Entry point
 ```
 
-## 📚 API Endpoints
+## API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
@@ -62,7 +62,7 @@ src/problem5/
 | `PUT` | `/api/books/:id` | Update book |
 | `DELETE` | `/api/books/:id` | Delete book |
 
-## 📖 Book Schema
+## Book Schema
 
 ```typescript
 {
@@ -77,15 +77,7 @@ src/problem5/
 }
 ```
 
-## 🔍 Query Parameters
-
-- **`genre`** - Filter by book genre
-- **`status`** - Filter by availability status
-- **`search`** - Text search across title, author, and description
-- **`limit`** - Number of results per page (1-100, default: 10)
-- **`offset`** - Number of results to skip (default: 0)
-
-## 💾 Database Configuration
+## Database Configuration
 
 Requires PostgreSQL database. Configure using environment variables:
 
@@ -97,7 +89,7 @@ DB_PASSWORD=password
 DB_NAME=bookstore
 ```
 
-## 🧪 Example Usage
+## Example Usage
 
 ### Create a Book
 ```bash
@@ -126,7 +118,7 @@ curl "http://localhost:3000/api/books?search=Gatsby&limit=5"
 curl "http://localhost:3000/api/books?status=available"
 ```
 
-## 🛠️ Development
+## Development
 
 ### Available Scripts
 ```bash
@@ -150,23 +142,9 @@ DB_NAME=bookstore
 API_URL=http://localhost:3000
 ```
 
-## 🎯 Features Demonstrated
-
-- **Clean Architecture** - Separation of concerns
-- **Type Safety** - Full TypeScript implementation
-- **Database Abstraction** - TypeORM with PostgreSQL
-- **API Documentation** - Auto-generated Swagger docs
-- **Input Validation** - Comprehensive request validation
-- **Error Handling** - Consistent error responses
-- **Filtering & Pagination** - Advanced query capabilities
-- **RESTful Design** - Standard HTTP methods and status codes
-
-## 🔗 Quick Links
+## Quick Links
 
 - **API Base**: http://localhost:3000/api/books
 - **Documentation**: http://localhost:3000/api-docs
-- **Health Check**: http://localhost:3000/ (redirects to docs)
 
 ---
-
-**Need help?** Check the interactive API documentation at `/api-docs` for detailed examples and testing interface!
