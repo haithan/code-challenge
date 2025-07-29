@@ -9,7 +9,7 @@
     "build:watch": "tsc --watch",
     "clean": "rm -rf dist && find src -name '*.js' -delete",
     "dev:problem4": "ts-node src/problem4/sum_to_n.ts",
-    "dev:problem5": "nodemon --exec ts-node src/problem5/index.ts",
+    "dev:problem5": "nodemon",
     "typeorm": "typeorm-ts-node-commonjs",
     "db:create": "typeorm-ts-node-commonjs schema:sync -d src/problem5/config/database.ts",
     "lint": "eslint src/**/*.ts",
